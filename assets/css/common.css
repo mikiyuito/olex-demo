@@ -1272,7 +1272,6 @@ Hero
   font-size: 1rem;
   font-size: clamp(0.875rem, 0.1vw + 0.875rem, 1rem);
   line-height: 2;
-  letter-spacing: 0.04em;
 }
 
 .p-hero__action {
@@ -1423,17 +1422,12 @@ Hero
   text-align: left;
 }
 
-.p-section.-flexible .p-section__text {
-  letter-spacing: 0.1em;
-}
 
 .p-section.-gutter .p-section__header {
   text-align: left;
 }
 
-.p-section.-gutter .p-section__text {
-  letter-spacing: 0.1em;
-}
+
 
 .p-section.-alignment .p-section__header {
   color: #fff;
@@ -7442,7 +7436,6 @@ Hero
   .p-hero__description {
     font-size: 1.25rem;
     font-size: clamp(1rem, 0.4vw + 0.65rem, 1.25rem);
-    letter-spacing: 0.08em;
   }
 
   .p-hero__action {
