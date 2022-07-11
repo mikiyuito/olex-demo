@@ -743,7 +743,7 @@ Grid
 .c-heading.-level2.is-inviewActive {
   -webkit-clip-path: inset(0 0 0 0);
   clip-path: inset(0 0 0 0);
-  transition-duration: 2s;
+  transition-duration: .7s;
   transition-property: -webkit-clip-path;
   transition-property: clip-path;
   transition-property: clip-path, -webkit-clip-path;
@@ -1370,6 +1370,7 @@ Hero
   opacity: 1;
   transition-duration: 0.5s;
   transition-property: opacity;
+  transition-delay: .2s;
 }
 
 .p-figure img {
@@ -1533,7 +1534,11 @@ Hero
   transform: translateY(10px);
 }
 
-.p-box.-feature .p-box__term {
+.p-box.-feature .p-box__body {
+  order: 2;
+}
+
+.p-box.-feature .p-box__title {
   margin-top: 1.5625rem;
   font-weight: 700;
   font-size: 1.5rem;
@@ -1541,7 +1546,7 @@ Hero
   letter-spacing: 0.04em;
 }
 
-.p-box.-feature .p-box__description {
+.p-box.-feature .p-box__text {
   margin-top: 1.5625rem;
   font-weight: 700;
   font-size: 0.75rem;
@@ -7452,7 +7457,7 @@ Hero
     font-size: clamp(1rem, 0.2vw + 0.825rem, 1.125rem);
   }
 
-  .p-box.-feature .p-box__description {
+  .p-box.-feature .p-box__text {
     font-size: 1rem;
     font-size: clamp(0.75rem, 0.4vw + 0.4rem, 1rem);
   }
@@ -7579,7 +7584,7 @@ Hero
 
   .is-drawerActive .p-header__inner::before {
     transform: scaleX(1);
-    transform-origin: left top;
+    transform-origin: right top;
     opacity: 1;
   }
 
