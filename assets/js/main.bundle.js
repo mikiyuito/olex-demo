@@ -3192,7 +3192,7 @@
       var targets = document.querySelectorAll(".js-inview");
       var options = {
         root: null,
-        rootMargin: "0% 0% 0%",
+        rootMargin: "0% 0% 60px",
         threshold: 0
       };
 
